@@ -22,6 +22,7 @@
 		49EAB9DB19CB8E8300C38BEA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49EAB9BA19CB8E8300C38BEA /* UIKit.framework */; };
 		49EAB9E319CB8E8300C38BEA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 49EAB9E119CB8E8300C38BEA /* InfoPlist.strings */; };
 		49EAB9E519CB8E8300C38BEA /* CoreMotionExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EAB9E419CB8E8300C38BEA /* CoreMotionExampleTests.m */; };
+		49EAB9EF19CB8ECA00C38BEA /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49EAB9EE19CB8ECA00C38BEA /* CoreMotion.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		49EAB9E019CB8E8300C38BEA /* CoreMotionExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CoreMotionExampleTests-Info.plist"; sourceTree = "<group>"; };
 		49EAB9E219CB8E8300C38BEA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		49EAB9E419CB8E8300C38BEA /* CoreMotionExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreMotionExampleTests.m; sourceTree = "<group>"; };
+		49EAB9EE19CB8ECA00C38BEA /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49EAB9EF19CB8ECA00C38BEA /* CoreMotion.framework in Frameworks */,
 				49EAB9B919CB8E8300C38BEA /* CoreGraphics.framework in Frameworks */,
 				49EAB9BB19CB8E8300C38BEA /* UIKit.framework in Frameworks */,
 				49EAB9B719CB8E8300C38BEA /* Foundation.framework in Frameworks */,
@@ -103,6 +106,7 @@
 		49EAB9B519CB8E8300C38BEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				49EAB9EE19CB8ECA00C38BEA /* CoreMotion.framework */,
 				49EAB9B619CB8E8300C38BEA /* Foundation.framework */,
 				49EAB9B819CB8E8300C38BEA /* CoreGraphics.framework */,
 				49EAB9BA19CB8E8300C38BEA /* UIKit.framework */,
@@ -393,7 +397,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CoreMotionExample/CoreMotionExample-Prefix.pch";
 				INFOPLIST_FILE = "CoreMotionExample/CoreMotionExample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -406,7 +412,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CoreMotionExample/CoreMotionExample-Prefix.pch";
 				INFOPLIST_FILE = "CoreMotionExample/CoreMotionExample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

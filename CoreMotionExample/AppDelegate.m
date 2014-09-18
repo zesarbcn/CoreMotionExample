@@ -10,6 +10,15 @@
 
 @implementation AppDelegate
 
+-(CMMotionManager *) motionManager
+{
+    if(!motionManager) {
+        motionManager = [[CMMotionManager alloc] init];
+        motionManager.deviceMotionUpdateInterval = 1.0 / 60.0;
+    }
+    return motionManager;
+}
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
